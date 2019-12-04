@@ -1,16 +1,15 @@
 <template>
   <div>
-    <h1>Index stranica</h1>
+    <h3>Customer list page</h3>
   </div>
 </template>
 
 <script>
 import AppLayer from '~/layouts/AppLayer'
-
 export default {
-  layout:"AppLayer",
-  components: {
-
-  }
+  layout: 'AppLayer'
 }
 </script>
+
+<style lang="scss" scoped>
+</style>
