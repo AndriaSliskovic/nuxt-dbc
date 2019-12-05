@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import WhiteLayer from '~/layouts/WhiteLayer'
-    export default {
-          layout:"WhiteLayer",
-    }
+import WhiteLayer from '~/layouts/AppLayer'
+export default {
+  layout: 'AppLayer'
+}
 </script>
 
 <style lang="scss" scoped>
