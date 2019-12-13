@@ -5,4 +5,5 @@ export const leviMenuSettinngs=[
   { id:3,title: 'Site List', icon: 'mdi-book-open',route:'/siteList' },
   { id:4,title: 'Customer list', icon: 'mdi-human-male',route:'/customerList' },
   { id:5,title: 'Events', icon: 'mdi-library-books',route:'/events' },
+  { id:6,title: 'UseCase log', icon: 'mdi-library-books',route:'/useCaseLog' },
 ]

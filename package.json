@@ -5,7 +5,7 @@
   "author": "Andria Sliskovic",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "serve": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.8.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "nprogress": "^0.2.0"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.0.0",

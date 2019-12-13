@@ -1,13 +1,18 @@
 <template>
     <div>
         <h3>Login page</h3>
+        <LoginUser/>
     </div>
 </template>
 
 <script>
-import WhiteLayer from '~/layouts/AppLayer'
+import AppLayer from '~/layouts/AppLayer'
+import LoginUser from './LoginUser'
 export default {
-  layout: 'AppLayer'
+  layout: 'AppLayer',
+  components:{
+LoginUser
+  }
 }
 </script>
 
