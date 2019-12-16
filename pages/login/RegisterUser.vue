@@ -15,9 +15,8 @@
 </template>
 
 <script>
-import WhiteLayer from '~/layouts/AppLayer'
+
 export default {
-    layout: 'AppLayer',
   data () {
     return {
       name: '',

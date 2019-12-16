@@ -16,9 +16,8 @@
 </template>
 
 <script>
-import AppLayer from '~/layouts/AppLayer'
+
 export default {
-    layout: 'AppLayer',
   props: {
     error: {
       type: Object,

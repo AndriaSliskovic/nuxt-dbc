@@ -7,6 +7,6 @@ const client = axiosClient(url)
 export default {
   login(dataObject){
       const routeUrl="auth/login"
-      client.post(routeUrl, dataObject)
+      return client.post(routeUrl, dataObject)
   },
 }

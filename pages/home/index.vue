@@ -20,23 +20,25 @@
           </div>
           <div v-else>
             <p>Nema tokena</p>
+
           </div>
+
         </v-col>
       </v-col>
     </v-card>
   </div>
 </template>
-
 <script>
-import AppLayer from '~/layouts/AppLayer'
+
 import { mapState } from 'vuex'
 
 export default {
-  layout: 'AppLayer',
-
-  computed: mapState({
-    user: state => state.login.user
-  })
+  computed: {
+    ...mapState({ user: state => state.login.user}),
+    userData:function(){
+      return this.user
+    }
+   },
 }
 </script>
 

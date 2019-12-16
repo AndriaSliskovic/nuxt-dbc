@@ -11,12 +11,11 @@
 </template>
 
 <script>
-import AppLayer from '~/layouts/AppLayer'
 import EventService from '~/services/EventService'
 import { mapState } from 'vuex'
 import EventCard from '@/components/EventCard.vue'
 export default {
-  layout: 'AppLayer',
+
   components: {
     EventCard
   },

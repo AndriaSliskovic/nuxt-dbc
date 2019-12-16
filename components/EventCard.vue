@@ -12,9 +12,8 @@
   </nuxt-link>
 </template>
 <script>
-import AppLayer from '~/layouts/AppLayer'
+
 export default {
-  layout: 'AppLayer',
   name: 'EventCard',
   props: {
     // eslint-disable-next-line vue/require-default-prop

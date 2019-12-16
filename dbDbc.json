@@ -1,4 +1,38 @@
-{    "events": [
+{ "logs":[
+  {
+    "name":"Test name",
+    "data":{},
+    "actor":{},
+    "executionTime":15,
+    "subscribers":[
+      {"name":"Adam",
+      "notified":true},
+      {"name":"Alan",
+        "notified":false}
+    ],
+    "status":"active",
+    "failedReason":"failed by mistaque",
+    "guid":"0000-0000-0000",
+    "exercutionDate":"08-07-19"
+  },
+  {
+    "name":"Test name 2",
+    "data":{},
+    "actor":{},
+    "executionTime":12,
+    "subscribers":[
+      {"name":"Andria",
+      "notified":true},
+      {"name":"Ala budala",
+        "notified":false}
+    ],
+    "status":"active",
+    "failedReason":"failed by mistaque",
+    "guid":"0000-0000-0000",
+    "exercutionDate":"08-09-19"
+  }
+],   
+  "events": [
   {
     "id": 5928101,
     "user": {

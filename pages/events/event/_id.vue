@@ -35,9 +35,9 @@
 </template>
 <script>
 import { mapState } from 'vuex'
-import AppLayer from '~/layouts/AppLayer'
+
 export default {
-  layout: 'AppLayer',
+
   head() {
     return {
       title: this.event.title,

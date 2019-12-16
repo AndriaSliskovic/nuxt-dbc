@@ -29,14 +29,17 @@
 </template>
 
 <script>
+
 import loginServis from '@/services/loginService'
 import { mapState } from 'vuex'
+import LoginService from '~/services/loginService'
 export default {
   data() {
     return {
       name: '',
       email: '',
-      password: ''
+      password: '',
+      token:''
     }
   },
   methods: {
@@ -46,20 +49,25 @@ export default {
         password: this.password
       }
     },
-   async login() {
+   login() {
       const dataObject = this.makeUserObject()
       console.log(dataObject)
-      //loginServis.login(dataObject)
-     await this.$store
+     this.$store
         .dispatch('login/loginUser',dataObject)
         .then(() => {
-          this.$router.push({ name: 'home' })
+          this.$router.push({ name: 'home'})
         })
     }
   },
-    computed: mapState({
-    user: state => state.login.user
-  })
+    computed: {
+      ...mapState({user: state => state.login.user})
+      },
+      watch:{
+        token:function(){
+          return this.user.token
+        }
+      }
+      
 }
 </script>
 
